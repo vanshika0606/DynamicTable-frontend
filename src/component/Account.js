@@ -52,7 +52,7 @@ const Accounts = ( ) => {
  //manager id fetch function:-
  //http://localhost:3000
   const fetchManagerid = async () => {
-    await fetch("https://dynamic-table.onrender.com/all_managerId")
+    await fetch("https://dynamic-tablee.onrender.com/all_managerId")
       .then((res) => {
         return res.json();
       })
@@ -65,7 +65,7 @@ const Accounts = ( ) => {
   // Customer data fetch function
   const fetchCustomers = async ()=>{
 
-    const res = await fetch("https://dynamic-table.onrender.com/",{
+    const res = await fetch("https://dynamic-tablee.onrender.com/",{
         method:"POST",
         headers:{
             "Content-Type": "application/json"
