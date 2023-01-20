@@ -50,8 +50,9 @@ const Accounts = ( ) => {
  const paginate = pageNumber => setCurrentPage(pageNumber);
 
  //manager id fetch function:-
+ //http://localhost:3000
   const fetchManagerid = async () => {
-    await fetch("http://localhost:3000/all_managerId")
+    await fetch("https://dynamic-table.onrender.com/all_managerId")
       .then((res) => {
         return res.json();
       })
@@ -64,7 +65,7 @@ const Accounts = ( ) => {
   // Customer data fetch function
   const fetchCustomers = async ()=>{
 
-    const res = await fetch("http://localhost:3000/",{
+    const res = await fetch("https://dynamic-table.onrender.com/",{
         method:"POST",
         headers:{
             "Content-Type": "application/json"
