@@ -225,6 +225,7 @@ const Accounts = ( ) => {
   }, [managerId,order,sortBasis]);
   return (
     <div>
+      {managerId=="" && <h1 style={{marginRight:'121px'}}>Select Manager Id</h1>}
       <select
         name="managerId"
         className="mangid-dropdown"
